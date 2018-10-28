@@ -36,9 +36,7 @@ public class Main {
 	public static void main(String[] args) throws IOException, ParseException {
 
 		Properties prop = new Properties();
-		InputStream input;
-
-		input = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
+		InputStream input = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
 		prop.load(input);
 
 		magneticX = Integer.parseInt(prop.getProperty("magneticX"));

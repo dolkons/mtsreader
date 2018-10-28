@@ -36,7 +36,7 @@ public class Main {
 	public static void main(String[] args) throws IOException, ParseException {
 
 		Properties prop = new Properties();
-		InputStream input = null;
+		InputStream input;
 
 		input = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
 		prop.load(input);

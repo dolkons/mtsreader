@@ -28,10 +28,6 @@ public class Main {
 	private static int magneticY;
 	private static int magneticZ;
 
-	private static int telluricX;
-	private static int telluricY;
-	private static int telluricZ;
-
 	private static int meanTxt5Min;
 	private static int meanTxt10Min;
 
@@ -50,15 +46,8 @@ public class Main {
 		magneticY = Integer.parseInt(prop.getProperty("magneticY"));
 		magneticZ = Integer.parseInt(prop.getProperty("magneticZ"));
 
-		telluricX = Integer.parseInt(prop.getProperty("telluricX"));
-		telluricY = Integer.parseInt(prop.getProperty("telluricY"));
-		telluricZ = Integer.parseInt(prop.getProperty("telluricZ"));
-
 		meanTxt5Min = Integer.parseInt(prop.getProperty("meanTxt5Min"));
 		meanTxt10Min = Integer.parseInt(prop.getProperty("meanTxt10Min"));
-
-		//meanTxt5Min = Integer.parseInt(prop.getProperty("meanDat5Min"));
-		//meanTxt10Min = Integer.parseInt(prop.getProperty("meanDat10Min"));
 
 		mainDir = prop.getProperty("DataDir");
 
@@ -109,17 +98,6 @@ public class Main {
 
 			Cell magneticZTitle = header.createCell(3 + cellCount);
 			magneticZTitle.setCellValue("magneticZ");
-
-			header.createCell(4 + cellCount);
-
-			Cell telluricXTitle = header.createCell(5 + cellCount);
-			telluricXTitle.setCellValue("telluricX");
-
-			Cell telluricYTitle = header.createCell(6 + cellCount);
-			telluricYTitle.setCellValue("telluricY");
-
-			Cell telluricZTitle = header.createCell(7 + cellCount);
-			telluricZTitle.setCellValue("telluricZ");
 
 			for (File dataFile : dataFiles) {
 				ArrayList<String> lines = new ArrayList<>();

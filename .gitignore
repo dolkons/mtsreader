@@ -6,3 +6,4 @@ target/*
 *.orig
 workspace.xml
 ignored.json
+*.class

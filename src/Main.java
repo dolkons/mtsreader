@@ -38,8 +38,7 @@ public class Main {
 		Properties prop = new Properties();
 		InputStream input = null;
 
-		input = new FileInputStream("./config.properties");
-		//input = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
+		input = new FileInputStream(System.getProperty("user.dir")+"/config.properties");
 		prop.load(input);
 
 		magneticX = Integer.parseInt(prop.getProperty("magneticX"));

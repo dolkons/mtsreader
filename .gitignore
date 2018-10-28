@@ -4,4 +4,5 @@ target/*
 **/TEMP/**
 *.user.*
 *.orig
+workspace.xml
 ignored.json

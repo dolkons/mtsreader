@@ -7,3 +7,7 @@ target/*
 workspace.xml
 ignored.json
 *.class
+
+*.jar
+
+mtsreader\.rar
